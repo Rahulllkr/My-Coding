@@ -269,58 +269,58 @@
 
 
 
-function sum(mat){
-    let firstSum = 0;
-    let secondSum = 0;
-    let srow = 0 ; 
-    let scol = 0;
-    let erow = mat.length-1 ; 
-    let ecol = mat.length-1;
+// function sum(mat){
+//     let firstSum = 0;
+//     let secondSum = 0;
+//     let srow = 0 ; 
+//     let scol = 0;
+//     let erow = mat.length-1 ; 
+//     let ecol = mat.length-1;
 
-   while(srow <= erow && scol <= ecol){
+//    while(srow <= erow && scol <= ecol){
 
-     for(let i = scol ; i <= ecol ; i++){
-        firstSum += (mat[srow][i])
-    }
-    for(let i = srow+1 ; i <= erow  ; i++){
-        firstSum += mat[i][ecol];
+//      for(let i = scol ; i <= ecol ; i++){
+//         firstSum += (mat[srow][i])
+//     }
+//     for(let i = srow+1 ; i <= erow  ; i++){
+//         firstSum += mat[i][ecol];
 
     
-    }  
-    srow++;
-    scol++;
-    erow--;
-    ecol--;
-   }
+//     }  
+//     srow++;
+//     scol++;
+//     erow--;
+//     ecol--;
+//    }
 
-   let row = 0;
-   let col = 0;
-   for(let i = row; i <= mat.length-1 ; i++){
-       secondSum += mat[i][col];
-       col++;
-   }
+//    let row = 0;
+//    let col = 0;
+//    for(let i = row; i <= mat.length-1 ; i++){
+//        secondSum += mat[i][col];
+//        col++;
+//    }
 
-    console.log(firstSum);
-    console.log(secondSum);
+//     console.log(firstSum);
+//     console.log(secondSum);
 
-}
-
-let arr = [
-    [1,2,3],
-    [4,5,6],
-    [7,8,9]
-]
-
-sum(arr);
-
-
-// function fibo(n){
-//     if(n == 0) return 0;
-//     if(n === 1) return 1
-
-//         let last = fibo(n-1);
-//         let secondLast = fibo(n-2);
-//         return last+secondLast;
 // }
-// console.log(fibo(5))
+
+// let arr = [
+//     [1,2,3],
+//     [4,5,6],
+//     [7,8,9]
+// ]
+
+// sum(arr);
+
+
+function fibo(n){
+    if(n == 0) return 0;
+    if(n === 1) return 1
+
+        let last = fibo(n-1);
+        let secondLast = fibo(n-2);
+        return last+secondLast;
+}
+console.log(fibo(4))
 
