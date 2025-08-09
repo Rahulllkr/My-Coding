@@ -322,5 +322,7 @@ function fibo(n){
         let secondLast = fibo(n-2);
         return last+secondLast;
 }
-console.log(fibo(4))
+console.log(fibo(6))
+
+console.log("My Github Set Successfully")
 
