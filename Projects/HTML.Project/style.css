@@ -1,0 +1,43 @@
+.container{
+    height: 800px;
+    width: 600px;
+    background-color: grey;
+    margin: 300px;
+}
+.relative{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: aqua;
+    left: 150px;
+}
+.absolute{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: blueviolet;
+    left:2000px ;
+}
+.fixed{
+    position: fixed;
+    height: 150px;
+    width: 150px;
+    background-color: brown;
+    bottom: 0px;
+    right: 0px;
+}
+.sticky{
+    position: sticky;
+    height: 150px;
+    width: 150px;
+    background-color: hotpink;
+    left: 610px;
+    top: 50px;
+}
+
+
+.linear{
+    height: 150px;
+    width: 200px;
+    background-image: linear-gradient(red,yellow,green 100%);
+}
