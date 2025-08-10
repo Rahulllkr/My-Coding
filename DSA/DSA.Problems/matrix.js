@@ -244,26 +244,55 @@
 
 //zigzag traversal
 
-function zigzag(arr){
+// function zigzag(arr){
 
-    for(let i = 0 ; i <= arr.length-1 ; i++){
-        if(i % 2 === 0){
-            for(let j = 0 ; j <= arr[i].length-1 ; j++){
-                process.stdout.write(arr[i][j] + " ")
-            }
-        }else{
-            for(let k = arr[i].length-1 ; k >= 0 ; k--){
-                process.stdout.write(arr[i][k] + " ")
-            }
-        }
+//     for(let i = 0 ; i <= arr.length-1 ; i++){
+//         if(i % 2 === 0){
+//             for(let j = 0 ; j <= arr[i].length-1 ; j++){
+//                 process.stdout.write(arr[i][j] + " ")
+//             }
+//         }else{
+//             for(let k = arr[i].length-1 ; k >= 0 ; k--){
+//                 process.stdout.write(arr[i][k] + " ")
+//             }
+//         }
+//     }
+
+// }
+
+// let arr = [
+//     [1,2,3],
+//     [5,6,7],
+//     [9,10,11]
+//  ]
+
+//  zigzag(arr);
+
+
+//boundary traversal 
+
+function boundary(arr){
+    let srow = 0; erow = arr.length-1;
+    let scol = 0; ecol = arr.length-1;
+
+    for(let i = scol ; i <= ecol ; i++){
+        process.stdout.write(arr[srow][i] + " ")
+    }
+    for(let j = srow + 1 ; j <= erow ; j++){
+        process.stdout.write(arr[j][ecol] + " ")
+    }
+    for(let k = ecol - 1 ; k >= 0 ; k--){
+        process.stdout.write(arr[erow][k] + " ")
+    }
+    for(let l = erow - 1 ; l >= srow + 1 ; l--){
+        process.stdout.write(arr[l][scol] + " ")
     }
 
 }
-
 let arr = [
     [1,2,3],
     [5,6,7],
     [9,10,11]
  ]
 
- zigzag(arr);
+ boundary(arr)
