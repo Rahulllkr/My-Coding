@@ -203,39 +203,42 @@
 
 //spiral matrix
 
-function spiralMat(arr){
+// function spiralMat(arr){
 
-   let srow = 0 ; erow = arr.length-1;
-   let scol = 0 ; ecol = arr.length-1;
+//    let srow = 0 ; erow = arr.length-1;
+//    let scol = 0 ; ecol = arr.length-1;
    
-  while(srow <= erow && scol <= ecol){
-    for(let i = scol ; i<= ecol ; i++){
-    process.stdout.write(arr[srow][i] + " ")
-   }
-   for(let i = srow + 1 ; i <= erow ; i++){
-    process.stdout.write(arr[i][ecol] + " ")
-   }
-   for(let i = ecol - 1 ; i>= scol ; i--){
-    process.stdout.write(arr[erow][i] + " ")
-   }
-   for(let i = erow-1 ; i >= srow+1 ; i--){
-    process.stdout.write(arr[i][scol] + " ")
-   }
+//   while(srow <= erow && scol <= ecol){
+//     for(let i = scol ; i<= ecol ; i++){
+//     process.stdout.write(arr[srow][i] + " ")
+//    }
+//    for(let i = srow + 1 ; i <= erow ; i++){
+//     process.stdout.write(arr[i][ecol] + " ")
+//    }
+//    for(let i = ecol - 1 ; i>= scol ; i--){
+//     process.stdout.write(arr[erow][i] + " ")
+//    }
+//    for(let i = erow-1 ; i >= srow+1 ; i--){
+//     process.stdout.write(arr[i][scol] + " ")
+//    }
 
-  srow++;
-  scol++;
-  ecol--;
-  erow--;
-  }
+//   srow++;
+//   scol++;
+//   ecol--;
+//   erow--;
+//   }
  
 
-}
+// }
 
 
-let arr = [
-    [1,2,3,4],
-    [5,6,7,8],
-    [9,10,11,12]
- ]
+// let arr = [
+//     [1,2,3,4],
+//     [5,6,7,8],
+//     [9,10,11,12]
+//  ]
 
- spiralMat(arr);
+//  spiralMat(arr);
+
+
+
