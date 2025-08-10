@@ -242,3 +242,28 @@
 
 
 
+//zigzag traversal
+
+function zigzag(arr){
+
+    for(let i = 0 ; i <= arr.length-1 ; i++){
+        if(i % 2 === 0){
+            for(let j = 0 ; j <= arr[i].length-1 ; j++){
+                process.stdout.write(arr[i][j] + " ")
+            }
+        }else{
+            for(let k = arr[i].length-1 ; k >= 0 ; k--){
+                process.stdout.write(arr[i][k] + " ")
+            }
+        }
+    }
+
+}
+
+let arr = [
+    [1,2,3],
+    [5,6,7],
+    [9,10,11]
+ ]
+
+ zigzag(arr);
